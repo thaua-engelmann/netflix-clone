@@ -1,0 +1,85 @@
+.featured-movie {
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-details {
+        &.vertical-effect {
+            width: inherit;
+            min-height: inherit;
+            background: linear-gradient(to top, #111 10%, transparent 90%);
+        }
+
+        &-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 2rem 10rem 2rem;
+
+            &.horizontal-effect {
+                width: inherit;
+                min-height: inherit;
+                background: linear-gradient(to right, #111 30%, transparent 70%);
+            }
+
+            &-name {
+                font-size: 6rem;
+            }
+
+            &-info {
+                display: flex;
+                gap: 2rem;
+                font-size: 2rem;
+                font-weight: 700;
+                margin: 1rem 0;
+
+                &-points {
+                    color: #0dae70;
+                }
+            }
+
+            &-overview {
+                color: #999;
+                font-size: 2rem;
+                max-width: 40%;
+                line-height: 1.5;
+            }
+
+            &-buttons {
+                display: flex;
+                gap: 2rem;
+                margin: 2rem 0;
+
+                a {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    padding: 1rem 4rem;
+                    border-radius: .5rem;
+                    transition: .3s;
+
+                    &:hover {
+                        opacity: .7;
+                    }
+
+                    &:first-child {
+                        background-color: #dfdfdf;
+                        color: #080608;
+                    }
+
+                    &:last-child {
+                        background-color: #343133;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &-genres {
+                color: #6b6b6b;
+                font-size: 2rem;
+                font-weight: 800;
+            }
+        }
+    }
+}
